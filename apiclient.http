@@ -1,0 +1,30 @@
+GET http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_produto":"Monitor ESOS 144hz",
+    "preco_produto": 999.90
+}
+###
+
+PUT http://localhost:3000/produto/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_produto":"Monitor ESOS 144hz",
+    "preco_produto": 1200.00
+}
+###
+
+DELETE http://localhost:3000/produto/5
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/produto/preco/990.90 HTTP/1.1
+Content-Type: application/json
+###
